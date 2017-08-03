@@ -1,0 +1,11 @@
+--- rebar.config.old	2015-12-30 16:37:20.547000000 -0500
++++ rebar.config	2015-12-30 16:38:03.474000000 -0500
+@@ -1,6 +1,7 @@
+ {erl_opts, [debug_info]}.
+ 
+-{port_env, [{"CFLAGS", "-g -O2 -Wall"}]}.
++{port_env, [{"CFLAGS", "-g -O2 -Wall"},
++            {"LDFLAGS","$LDFLAGS -lz"}]}.
+ 
+ {port_specs, [{"priv/lib/ezlib_drv.so", ["c_src/ezlib_drv.c"]}]}.
+ 
