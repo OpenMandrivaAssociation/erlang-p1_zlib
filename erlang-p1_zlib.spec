@@ -15,6 +15,11 @@ URL:        https://github.com/processone/ezlib/
 Source0:    https://github.com/processone/ezlib/archive/%{version}.tar.gz
 Patch0:     ldflags.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: erlang-eunit
 BuildRequires: erlang-rebar
 BuildRequires: erlang-rpm-macros
